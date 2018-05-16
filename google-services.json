@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "391164952938",
+    "firebase_url": "https://feedrapp-27cbf.firebaseio.com",
+    "project_id": "feedrapp-27cbf",
+    "storage_bucket": "feedrapp-27cbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391164952938:android:e4209b3e14a7a6d9",
+        "android_client_info": {
+          "package_name": "com.feedrapp.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391164952938-denk406vb2gd08ju7372q1ujqcm9hdge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0k9sfbMtqvp6a_FisYU31igSwGemohYA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

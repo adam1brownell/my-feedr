@@ -1,0 +1,14 @@
+Consult design ppl for design tips (Matt + Jill)
+Add State about Timer
+Add State about Social Media Info
+Build 'Time's Up' Alert
+Link Alert to Main Button Page
+Learn FB Refresh Token API call
+  Add State to save FB data
+Build Facebook Page
+  Display API Information
+Build Buttons to interact with FB API Info
+  Build Accept invite Button
+  Build Reject Invite Button
+Add State for Time Buffer
+Modify bigButtton to only work after Time Buffer

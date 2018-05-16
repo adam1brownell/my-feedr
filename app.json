@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "my-feedr",
+    "description": "The Low Information Diet App",
+    "slug": "my-feedr",
+    "privacy": "public",
+    "sdkVersion": "25.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "facebookScheme": "fb639131359759717",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.test"
+    },
+    "android": {
+      "package": "org.test"
+    },
+    "isDetached": true,
+    "detach": {
+      "scheme": "exp378b5b72841940a5bc09d89aae909312",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.3.0-sdk25.0.0-0c32461b-a7c6-4ddc-b85b-32a80c4f18d9.tar.gz"
+    }
+  }
+}

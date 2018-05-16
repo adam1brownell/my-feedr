@@ -1,0 +1,91 @@
+*** react Redux
+import {connect} from react-redux
+don't export class, instead export the class wrapped in
+connect()
+
+export default Othername = connect(
+mapStateToProps,
+mapDispatchToProps)(className);
+
+Othername can be the className
+
+mapStateToProps is how components get the current state
+from the store
+
+const mapStateToProps = state => {
+return{
+  allEvents: state.loadEvents.events,
+  myEvents: state.myEvents
+  visibility: state.REDUCER.event
+  }
+}
+visibility is a prop related to the className
+The values in mapStateToProps become the components
+props. You can access them through this.props.propName
+
+The store is not a physical file! It's one big object
+compiled over all your components' states
+
+Components change the store through actions
+
+actions are the data/news of what happened sent by
+components
+  Actions are objects
+  Have an action file to contain types.js with:
+    export const ACTION = 'ACTION'
+  Have an action file to contain index.js with:
+    export function addEvent = filter, event => {
+    return {
+      type: types.ACTION,
+      filter
+      event
+    };
+    }
+event is JS shorthand for setting a value pair 'event'
+to the value event
+
+mapDispatchToProps is how components can send actions to
+the store
+
+import {action} from index.js
+const mapDispatchToProps = dispatch => {
+  return {
+  filterEvents: (filter, events) => dispatch(ACTION(filter, events))
+  }
+}
+
+filterEvents is a function used in my component
+to send out an action and can be access through
+onPress={()=>{this.props.filterEvents(filter,events)}
+
+the reducer is in the store and deciphers the
+action to update the store. It's just a bunch of
+functions in the form of switch statements
+
+import * as types from 'types.js'
+**Define initial state in
+  const initialState = {
+  ...
+  }
+export default function REDUCER(state = initialState,action){
+  switch(action.type){
+    case: DIF_ACTION:
+      //do this
+    case: ACTION
+      switch(action.filter){
+        case: 'Filter1':
+          //do this
+        case: 'Filter2':
+          var concerts = //something
+          return Object.assign({event: concerts})
+      }
+  }
+}
+
+Combine all reducers by
+{combineReducers} from 'redux';
+
+export default reducers = combineReducers({
+one,
+two
+});
