@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import * as firebase from 'firebase';
 
 
-const FB_APP_ID = '639131359759717'
+const FB_APP_ID = ''
 
 export async function FBlogIn() {
   const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync(FB_APP_ID, {
